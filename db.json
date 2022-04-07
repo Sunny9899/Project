@@ -1,0 +1,766 @@
+{
+      "data":[
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/97169/280/1/143849890-97169265-1551168395.jpg",
+          "name": "Kichoda 113 Rk9",
+          "mrp": 1119,
+          "discount": 36,
+          "rating": 3,
+          "category": "Mobile",
+          "id": 1
+        },
+
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/111557/280/1/151256411-111557541-1605795037.jpg",
+          "name": "S4 Fast Type C Charger for Vivo V17 Pro/Y5",
+          "mrp": 276,
+          "discount": 70,
+          "rating": 3.5,
+          "category": "Mobile",
+          "id": 2
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113435/280/1/152095050-113435241-1615803437.jpg",
+          "name": "Portronics Modesk 200 POR-1203 Universal ",
+          "mrp": 699,
+          "discount": 87,
+          "rating": 4.2,
+          "category": "Mobile",
+          "id": 3
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114509/280/1/152435006-114509479-1624859130.jpg",
+          "name": "HP Notebook 14s-dk0093au (R5-3500U/8GB",
+          "mrp": 52000,
+          "discount": 2,
+          "rating": 5,
+          "category": "Mobile",
+          "id": 4
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/111967/280/1/151412100-111967441-1605206495.jpg",
+          "name": "Samsung Galaxy Note 8 Phone",
+          "mrp": 50000,
+          "discount": 50,
+          "rating": 4,
+          "category": "Mobile",
+          "id": 5
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113794/280/1/152213252-113794193-1619002101.jpg",
+          "name": "OPPO A54 (4 GB RAM, 64 GB ROM)",
+          "mrp": 14699,
+          "discount": 9,
+          "rating": 4.3,
+          "category": "Mobile",
+          "id": 6
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/111954/280/1/151404610-111954140-1605072745.jpg",
+          "name": "OPPO A15 (3GB RAM, 32GB Storage)",
+          "mrp": 10990,
+          "discount": 24,
+          "rating": 4.1,
+          "category": "Mobile",
+          "id": 7
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114623/280/1/152498333-114623644-1625885890.jpg",
+          "name": "OPPO A33 (Moonlight Black, 32 GB) (3 GB RAM)",
+          "mrp": 10990,
+          "discount": 30,
+          "rating": 4.7,
+          "category": "Mobile",
+          "id": 8
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114384/280/1/152384827-114384201-1623162456.jpg",
+          "name": "Micromax IN Note 1 (Green, 128 GB) (4 GB RAM)",
+          "mrp": 13499,
+          "discount": 27,
+          "rating": 2,
+          "category": "Mobile",
+          "id": 9
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/109395/280/1/150611869-109395058-1601281407.jpg",
+          "name": "Micromax Canvas Infinity HS2 3 GB RAM 32 GB RO",
+          "mrp": 8000,
+          "discount": 44,
+          "rating": 3,
+          "category": "Mobile",
+          "id": 10
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113500/280/1/152119261-113500306-1616596266.jpg",
+          "name": "Infinix Smart HD 2021 (Topaz Blue, 32 GB) (2 GB R",
+          "mrp": 8000,
+          "discount": 25,
+          "rating": 4,
+          "category": "Mobile",
+          "id": 11
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113500/280/1/152119261-113500306-1616596266.jpg",
+          "name": "Infinix Smart 5 (Morandi Green, 32 GB) (2 GB RAM)",
+          "mrp": 8500,
+          "discount": 25,
+          "rating": 3.5,
+          "category": "Mobile",
+          "id": 12
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114824/280/1/152565258-114824483-1627054506.jpg",
+          "name": "Infinix Hot 10S (Morandi Green, 64 GB) (4 GB RAM)",
+          "mrp": 11500,
+          "discount": 23,
+          "rating": 4.5,
+          "category": "Mobile",
+          "id": 13
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/112535/280/1/151713279-112535043-1608722333.jpg",
+          "name": "BONTECH 32 GB PENDRIVE",
+          "mrp": 1000,
+          "discount": 40,
+          "rating": 4.5,
+          "category": "Mobile",
+          "id": 14
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114074/280/1/152295153-114074376-1621143368.jpg",
+          "name": "SanDisk Cruzer Blade 64GB USB 2.0 Pen Drive",
+          "mrp": 650,
+          "discount": 20,
+          "rating": 4,
+          "category": "Mobile",
+          "id": 15
+        },
+
+        {
+          "name": "Huda Beauty Red Edition 8g pack of 4",
+          "mrp": 700,
+          "discount": 70,
+          "rating": 3.9,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/99242/280/1/145428226-99242841-1584092112.jpg",
+          "category": "Women Clothing",
+          "id": 16
+        },
+        {
+          "name": "Women's London Gold plated Necklace ",
+          "mrp": 1034,
+          "discount": 60,
+          "rating": 4.3,
+          "img": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/10552114/2021/3/17/4bc96d0f-bf05-4982-8db7-3f765e4e60fc1615972646829CarltonLondonGold-PlatedLayeredNecklace1.jpg",
+          "category": "Women Clothing",
+          "id": 17
+        },
+        {
+          "name": "Rose Gold Plated Layered Necklace",
+          "mrp": 9999,
+          "discount": 70,
+          "rating": 4.2,
+          "img": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14868514/2021/9/2/6d157b5c-5edb-426a-89ba-6ecd8c6efaf51630555169903-Jewels-Galaxy-Gold--Rose-Gold-Plated-Layered-Necklace-Set-Of-1.jpg",
+          "category": "Women Clothing",
+          "id": 18
+        },
+        {
+          "name": "Baby Pink colour top by attitude jeans",
+          "mrp": 700,
+          "discount": 15,
+          "rating": 4.1,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114879/320/1/152573973-114879329-1627716233.jpg",
+          "category": "Women Clothing",
+          "id": 19
+        },
+        {
+          "name": "Jhumka's by Rose Gold",
+          "mrp": 1347,
+          "discount": 25,
+          "rating": 4.6,
+          "img": "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/12/16/832de1e6-2166-4fc3-9ff7-ae558ab53a2a1608123835571-1.jpg",
+          "category": "Women Clothing",
+          "id": 20
+        },
+        {
+          "name": "Indiforce Women Heel's Sandal",
+          "mrp": 9999,
+          "discount": 90,
+          "rating": 4.4,
+          "img": "https://cdn.shopclues.com/images/thumbnails/84718/320/1/118658108Y4A23031506065239.jpg",
+          "category": "Women Clothing",
+          "id": 21
+        },
+        {
+          "name": "Gold Toned Beautiful Necklace",
+          "mrp": 2000,
+          "discount": 50,
+          "rating": 4,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/104713/320/1/148929772-104713541-1580294626.jpg",
+          "category": "Women Clothing",
+          "id": 22
+        },
+        {
+          "name": "Women's Gray Friend's Raglan Top",
+          "mrp": 534,
+          "discount": 10,
+          "rating": 4.7,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114507/320/1/152433686-114507260-1624711661.jpg",
+          "category": "Women Clothing",
+          "id": 23
+        },
+        {
+          "name": "Funku Fashion Women Tan Sandal",
+          "mrp": 999,
+          "discount": 40,
+          "rating": 3.6,
+          "img": "https://cdn.shopclues.com/images/thumbnails/83606/320/1/127711873FFD1060TanA1505203530.jpg",
+          "category": "Women Clothing",
+          "id": 24
+        },
+        {
+          "name": "ADS foundation With Sketch Pen Eyeliner",
+          "mrp": 399,
+          "discount": 65,
+          "rating": 3.2,
+          "img": "https://cdn.shopclues.com/images/thumbnails/86636/280/1/130047783129412073122344629foundationwithsketchpeneyeliner1502adsoriginalimaesan48kygunan149892824015069620201508758489.jpg",
+          "category": "Women Clothing",
+          "id": 25
+        },
+        {
+          "name": "Ft Strip Shoulder Bottle Green Women Dress",
+          "mrp": "799",
+          "discount": 47,
+          "rating": 4.5,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114532/320/1/152445146-114532471-1625127186.jpg",
+          "category": "Women Clothing",
+          "id": 26
+        },
+        {
+          "name": "Code Yellow Women'S Brown Handbag",
+          "mrp": 1249,
+          "discount": 69,
+          "rating": 4.6,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/90739/320/1/140118414-90739454-1533113817.jpg",
+          "category": "Women Clothing",
+          "id": 27
+        },
+        {
+          "name": "Code Yellow Gold Round Dial Diamond Watch",
+          "mrp": 1599,
+          "discount": 85,
+          "rating": 4.1,
+          "img": "https://cdn.shopclues.com/images/thumbnails/89262/320/1/13182996098726095945407889089954087750699842123388365975278919312769856545551423129818143082082414342209351446057623144818660814550844561460537080146632446914754940751512891811.jpg",
+          "category": "Women Clothing",
+          "id": 28
+        },
+        {
+          "name": "Women's Blue Clutch",
+          "mrp": 1999,
+          "discount": 84,
+          "rating": 4.8,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/90739/320/1/140118422-90739475-1533113844.jpg",
+          "category": "Women Clothing",
+          "id": 29
+        },
+        {
+          "name": "Good Girl Perfume(Carolenna herrara)",
+          "mrp": 1999,
+          "discount": 89,
+          "rating": 3.5,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/105177/320/1/149104575-105177438-1582197699.jpg",
+          "category": "Women Clothing",
+          "id": 30
+        },
+
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/16112/280/1/762895344303r114264124041429602514.jpg",
+          "name": "Snack Plates-Incrizma Triangular Snack Plates 4 Pc - Red/White",
+          "mrp": 399,
+          "discount": 21,
+          "category": "Home Furnishing",
+          "id": 31,
+          "rating": 5
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/112091/280/1/151483616-112091395-1606811542.jpg",
+          "name": "Happy Home 28 Pcs Premium Dinner Set",
+          "mrp": 1999,
+          "discount": 52,
+          "category": "Home Furnishing",
+          "id": 32,
+          "rating": 4
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113778/280/1/152208334-113778486-1618651357.jpg",
+          "name": "Lazywindow Portable Blender USB Juicer with Charger",
+          "mrp": 1500,
+          "discount": 63,
+          "category": "Home Furnishing",
+          "id": 33,
+          "rating": 3.6
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113508/280/1/152122339-113508156-1616751774.jpg",
+          "name": "Foldable Electric Travel Kettle Dual Voltage Food Grade Silicone 0.6 Litre",
+          "mrp": 999,
+          "discount": 35,
+          "category": "Home Furnishing",
+          "id": 34,
+          "rating": 2.8
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/86626/280/1/130041918LLSM114TMain1508747128.png",
+          "name": "Lifelong LLSM114T (750Watt) - 4 Slice sandwich maker (Black)",
+          "mrp": 900,
+          "discount": 11,
+          "category": "Home Furnishing",
+          "id": 35,
+          "rating": 1
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/102411/280/1/147566079-102411213-1566202843.jpg",
+          "name": "Philips HL1655/00 250 W Hand Blender (White, Blue)",
+          "mrp": 1995,
+          "discount": 30,
+          "category": "Home Furnishing",
+          "id": 36,
+          "rating": 1.5
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/88687/280/1/131315901carp0271512176772.jpg",
+          "name": "Manvi Creations New Floral Chenille Carpet",
+          "mrp": 1499,
+          "discount": 62,
+          "category": "Home Furnishing",
+          "id": 37,
+          "rating": 3
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/27515/280/1/KIDSRUGGREENROAD11448430807.jpg",
+          "name": "Taba Kids Carpet 35 Feet Kidsruggreenroad",
+          "mrp": 1729,
+          "discount": 52,
+          "category": "Home Furnishing",
+          "id": 38,
+          "rating": 4.8
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/107459/280/1/149946870-107459626-1591262555.jpg",
+          "name": "D S INTER Automatic Touchless Sensor/ Hands-Free Magic Soap Dispenser",
+          "mrp": 3999,
+          "discount": 86,
+          "category": "Home Furnishing",
+          "id": 39,
+          "rating": 4
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/69901/280/1/118407022118407022AT130zpsonor34zi14718178711493659379.jpg",
+          "name": "Allen Key",
+          "mrp": 599,
+          "discount": 53,
+          "category": "Home Furnishing",
+          "id": 40,
+          "rating": 2.9
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/112467/280/1/151665419-112467186-1608213745.jpg",
+          "name": "Rotary Tool DIE Grinder KIT 163 Pieces Accessory KIT for Precision Work Rotary Tool KIT DIE Grinder",
+          "mrp": 5999,
+          "discount": 40,
+          "category": "Home Furnishing",
+          "id": 41,
+          "rating": 3.3
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114612/280/1/152494337-114612401-1625735532.jpg",
+          "name": "Mapon All Purpose Magic Towel For Home, Kitchen and Outdoor Usage",
+          "mrp": 599,
+          "discount": 78,
+          "category": "Home Furnishing",
+          "id": 42,
+          "rating": 1
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/50333/280/1/TorinoCreativeShotWenge14748739941482507938.png",
+          "name": "INTEX STYLES - TORINO BED (QUEEN SIZE WENGE COLORED)",
+          "mrp": 20999,
+          "discount": 25,
+          "category": "Home Furnishing",
+          "id": 43,
+          "rating": 2.2
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/thumbnails/30532/200/200/GGWMR1zpsndpwkmqe1453116797.jpg",
+          "name": "Wall Mountable Pot(2 pcs)",
+          "mrp": 700,
+          "discount": 86,
+          "category": "Home Furnishing",
+          "id": 44,
+          "rating": 4.7
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/113296/280/1/152030491-113296221-1614159241.jpg",
+          "name": "Home Berry XXXL Tear Drop Bean Bag Cover (Without Beans) (Green)",
+          "mrp": 1799,
+          "discount": 63,
+          "category": "Home Furnishing",
+          "id": 45,
+          "rating": 5
+        },
+        {
+          "img": "https://cdn.shopclues.com/images/banners/Work/widgetClp/garden/Garden_Lights.jpg",
+          "name": "Apex Gardening Lights(Set of 4)",
+          "mrp": 1837,
+          "discount": 40,
+          "category": "Home Furnishing",
+          "id": 46,
+          "rating": 2.5
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114612/280/1/152494326-114612371-1628176995.jpg",
+          "name": "Ghar Kraft Hexagon 13 Golden Acrylic Mirror Wall Stickers",
+          "mrp": 499,
+          "discount": 66,
+          "category": "Home Furnishing",
+          "id": 47,
+          "rating": 3.9
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/103682/280/1/148317870-103682572-1574147395.jpg",
+          "name": "1 Walltola PVC Tree Branches With Leaves Vinyl Wall Sticker",
+          "mrp": 599,
+          "discount": 81,
+          "category": "Home Furnishing",
+          "id": 48,
+          "rating": 3
+        },
+        {
+          "img": "https://cdn.shopclues.com/images1/thumbnails/96771/280/1/143546322-96771351-1549542127.jpg",
+          "name": "Choco More Digital Print Curtain pack of 1 ",
+          "mrp": 699,
+          "discount": 72,
+          "category": "Home Furnishing",
+          "id": 49,
+          "rating": 4.1
+        },
+
+        {
+          "name": "Pause Olive Solid Shawl Collar Cardigan",
+          "mrp": "1099",
+          "category": "Mens Clothing",
+          "id": 50,
+          "discount": 52,
+          "rating": 3,          
+          "img": "https://cdn.shopclues.com/images1/thumbnails/103065/320/1/147976958-103065391-1587804134.jpg"
+        },
+        {
+          "name": "Veirdo Men's Maroon V-Neck T-shirt",
+          "mrp": "999",
+          "category": "Mens Clothing",
+          "id": 51,
+          "discount": 73,
+          "rating": 4.0,
+          "img": "https://cdn.shopclues.com/images/thumbnails/86292/200/200/129791864TSHV26BLKMRNCopy1507883025.jpg"
+        },
+        {
+          "name": "Stylogue Olive Printed Half Sleeves T-Shirt",
+          "mrp": "299",
+          "category": "Mens Clothing",
+          "id": 52,
+          "discount": 40,
+          "rating": 3.2,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/114435/160/160/152402990-114435286-1623836440.jpg"
+        },
+        {
+          "name": "PE Men's Brown Long Sleeve Regular Fit T-Shirt",
+          "mrp": "1999",
+          "category": "Mens Clothing",
+          "id": 53,
+          "discount": 67,
+          "rating": 4.2,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/79269/320/320/134551427-79269186-1560489876.jpg"
+        },
+        {
+          "name": "Pause Black Stylish hand Zip Bomby Winter Jacket ",
+          "mrp": "1499",
+          "category": "Mens Clothing",
+          "id": 54,
+          "discount": 63,
+          "rating": 3.9,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/115272/320/1/150739973-115272207-1631620898.jpg"
+        },
+        {
+          "name": "Woakers Men's White-Orange Sneakers",
+          "mrp": "899",
+          "category": "Mens Clothing",
+          "id": 55,
+          "discount": 41,
+          "rating": 4.0,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/111789/320/1/151324271-111789356-1608656401.jpg"
+        },
+        {
+          "name": "NIKE AIR MAX 2020 BLACK RUNING SHOES",
+          "mrp": "15995",
+          "category": "Mens Clothing",
+          "id": 56,
+          "discount": 87,
+          "rating": 4.4,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/105345/280/1/149172856-105345517-1583313897.jpg"
+        },
+        {
+          "name": "Fashlook Men White Block Sky Blue Slim Fit Casual Shirt",
+          "mrp": "3295",
+          "category": "Mens Clothing",
+          "id": 57,
+          "discount": 83,
+          "rating": 4.6,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/107050/160/160/149812588-107050856-1590565042.jpg"
+        },
+        {
+          "name": "Lee Peeter Men's Tan Patent Formal Shoe",
+          "mrp": "1999",
+          "category": "Mens Clothing",
+          "id": 58,
+          "discount": 72,
+          "rating": 4.1,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/90035/320/1/139855539-90035166-1531377013.jpg"
+        },
+        {
+          "name": "LeatherRetail White Spanish Faux Leather Jacket For Man",
+          "mrp": "4999",
+          "category": "Mens Clothing",
+          "id": 59,
+          "discount": 65,
+          "rating": 3.5,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/91593/320/1/140445912-91593353-1535448217.jpg"
+        },
+        {
+          "name": "Stylogue Round Neck Half Sleeve T-shirt For Men",
+          "mrp": "699",
+          "category": "Mens Clothing",
+          "id": 60,
+          "discount": 70,
+          "rating": 3.7,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/108959/280/1/150492191-108959097-1609164011.jpg"
+        },
+        {
+          "name": "Trendyz Men White Cotton Hooded Tshirt",
+          "mrp": "1299",
+          "category": "Mens Clothing",
+          "id": 61,
+          "discount": 56,
+          "rating": 4.3,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/105344/320/1/149172711-105344979-1600845832.jpg"
+        },
+        {
+          "name": "Mishor Men Grey Plain Hooded Sweatshirt",
+          "mrp": "1499",
+          "category": "Mens Clothing",
+          "id": 62,
+          "discount": 53,
+          "rating": 4.7,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/112932/320/320/151886403-112932676-1610972024.jpg"
+        },
+        {
+          "name": "FrionKandy Cotton Block Print Shirt",
+          "mrp": "1399",
+          "category": "Mens Clothing",
+          "id": 63,
+          "discount": 70,
+          "rating": 4.2,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/110878/280/1/151050227-110878355-1602037025.jpg"
+        },
+        {
+          "name": "Men's White Black Round Neck Color Block T-Shirt",
+          "mrp": "399",
+          "category": "Mens Clothing",
+          "id": 64,
+          "discount": 30,
+          "rating": 4.0,
+          "img": "https://cdn.shopclues.com/images1/thumbnails/101924/280/1/147322523-101924415-1563454231.jpg"
+        },
+
+        {
+          "id": 65,
+          "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95,
+          "discount": 30,
+          "category": "Mens Clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "rating": 3.9
+        },
+        {
+          "id": 66,
+          "name": "Mens Casual Premium Slim Fit T-Shirts ",
+          "price": 22.3,
+          "discount": 35,
+          "category": "Mens Clothing",
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+          "rating": 4.1
+        },
+        {
+          "id": 67,
+          "name": "Mens Cotton Jacket",
+          "price": 55.99,
+          "discount": 46,
+          "category": "Mens Clothing",
+          "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+          "rating": 4.7
+        },
+        {
+          "id": 68,
+          "name": "Mens Casual Slim Fit",
+          "price": 15.99,
+          "discount": 84,          
+          "category": "Mens Clothing",
+          "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+          "rating": 2.1
+        },
+        {
+          "id": 69,
+          "name": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          "price": 695,
+          "discount": 64,
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+          "rating": 4.6
+        },
+        {
+          "id": 70,
+          "name": "Solid Gold Petite Micropave ",
+          "price": 168,
+          "discount": 41,
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+          "rating": 3.9        
+        },
+        {
+          "id": 71,
+          "name": "White Gold Plated Princess",
+          "price": 9.99,
+          "discount": 37,
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+          "rating": 3  
+        },      
+        {
+          "id": 72,
+          "name": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+          "price": 10.99,
+          "discount": 24,
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+          "rating": 1.9
+        },
+        {
+          "id": 73,
+          "name": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+          "price": 64,
+          "discount": 42,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+          "rating": 3.3
+        },
+        {
+          "id": 74,
+          "name": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+          "price": 109,
+          "discount": 62,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+          "rating": 2.9
+        },
+        {
+          "id": 75,
+          "name": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+          "price": 109,
+          "discount": 10,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+          "rating": 4.8
+        },
+        {
+          "id": 76,
+          "name": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+          "price": 114,
+          "discount": 50,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+          "rating": 4.8
+        },
+        {
+          "id": 77,
+          "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+          "price": 599,
+          "discount": 54,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+          "rating": 2.9
+        },
+        {
+          "id": 78,
+          "name": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+          "price": 999.99,
+          "discount": 60,
+          "category": "electronics",
+          "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+          "rating": 2.2
+        },
+        {
+          "id": 79,
+          "name": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+          "price": 56.99,
+          "discount": 39,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+          "rating": 2.6
+        },
+        {
+          "id": 80,
+          "name": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+          "price": 29.95,
+          "discount": 68,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+          "rating": 2.9
+        },
+        {
+          "id": 81,
+          "name": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+          "price": 39.99,
+          "discount": 35,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+          "rating": 3.8
+        },
+        {
+          "id": 82,
+          "name": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+          "price": 9.85,
+          "discount": 62,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+          "rating": 4.7
+        },
+        {
+          "id": 83,
+          "name": "Opna Women's Short Sleeve Moisture",
+          "price": 7.95,
+          "discount": 25,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+          "rating": 4.5
+        },
+        {
+          "id": 84,
+          "name": "DANVOUY Womens T Shirt Casual Cotton Short",
+          "price": 12.99,
+          "discount": 85,
+          "category": "Women Clothing",
+          "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+          "rating": 3.6
+        }
+      ]
+    }
+
