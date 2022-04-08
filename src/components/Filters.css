@@ -1,0 +1,20 @@
+#container{
+    border:1px solid black;
+    text-align:left;
+    width:30%;
+    height:200px;
+}
+#cost>button:hover,#discount>button:hover{
+    background-color:black;
+    color:white;
+}
+#cost>button,#discount>button{
+border:1px solid black;
+margin-left:10px;
+}
+#category>select{
+    border:1px solid black;
+}
+#rate2,#rate3,#rate4{
+    margin-left:53px;
+}
