@@ -2,7 +2,7 @@
     border:1px solid black;
     text-align:left;
     width:30%;
-    height:200px;
+    height:250px;
 }
 #cost>button:hover,#discount>button:hover{
     background-color:black;
@@ -16,5 +16,5 @@ margin-left:10px;
     border:1px solid black;
 }
 #rate2,#rate3,#rate4{
-    margin-left:53px;
+    margin-left:10px;
 }
