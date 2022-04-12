@@ -1,18 +1,15 @@
 import './App.css';
-import {Card} from "./components/Card";
-import {Gridd} from "./components/Grid";
-import {Filter} from "./components/Filters";
+import {Gridd} from "./components/Grid/Grid";
+import {Filter} from "./components/Filters/Filters";
 
 function App() {
   return (
     <div className="App">
-      <Card/>
-      <br/>
+      <b style={{"fontSize":"40px"}}>Filter: </b>
+      <Filter/>      
       <b style={{"fontSize":"40px"}}>Grid: </b>
       <Gridd/>
-      <br/>
-      <b style={{"fontSize":"40px"}}>Filter: </b>
-      <Filter/>
+
     </div>
   );
 }

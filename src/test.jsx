@@ -1,6 +1,10 @@
 import "./Filters.css";
+import {useState} from "react";
+
 
 export const Filter = () =>{
+
+const [filter,setFilter]=useState([]);
 
 /*Sort
 

@@ -229,7 +229,7 @@
         },
         {
           "name": "Ft Strip Shoulder Bottle Green Women Dress",
-          "mrp": "799",
+          "mrp": 799,
           "discount": 47,
           "rating": 4.5,
           "img": "https://cdn.shopclues.com/images1/thumbnails/114532/320/1/152445146-114532471-1625127186.jpg",
@@ -584,7 +584,7 @@
         {
           "id": 65,
           "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-          "price": 109.95,
+          "mrp": 109.95,
           "discount": 30,
           "category": "Mens Clothing",
           "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
@@ -593,7 +593,7 @@
         {
           "id": 66,
           "name": "Mens Casual Premium Slim Fit T-Shirts ",
-          "price": 22.3,
+          "mrp": 22.3,
           "discount": 35,
           "category": "Mens Clothing",
           "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
@@ -602,7 +602,7 @@
         {
           "id": 67,
           "name": "Mens Cotton Jacket",
-          "price": 55.99,
+          "mrp": 55.99,
           "discount": 46,
           "category": "Mens Clothing",
           "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
@@ -611,7 +611,7 @@
         {
           "id": 68,
           "name": "Mens Casual Slim Fit",
-          "price": 15.99,
+          "mrp": 15.99,
           "discount": 84,          
           "category": "Mens Clothing",
           "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
@@ -620,7 +620,7 @@
         {
           "id": 69,
           "name": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-          "price": 695,
+          "mrp": 695,
           "discount": 64,
           "category": "jewelery",
           "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
@@ -629,7 +629,7 @@
         {
           "id": 70,
           "name": "Solid Gold Petite Micropave ",
-          "price": 168,
+          "mrp": 168,
           "discount": 41,
           "category": "jewelery",
           "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
@@ -638,7 +638,7 @@
         {
           "id": 71,
           "name": "White Gold Plated Princess",
-          "price": 9.99,
+          "mrp": 9.99,
           "discount": 37,
           "category": "jewelery",
           "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
@@ -647,7 +647,7 @@
         {
           "id": 72,
           "name": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-          "price": 10.99,
+          "mrp": 10.99,
           "discount": 24,
           "category": "jewelery",
           "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
@@ -656,7 +656,7 @@
         {
           "id": 73,
           "name": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-          "price": 64,
+          "mrp": 64,
           "discount": 42,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
@@ -665,7 +665,7 @@
         {
           "id": 74,
           "name": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-          "price": 109,
+          "mrp": 109,
           "discount": 62,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
@@ -674,7 +674,7 @@
         {
           "id": 75,
           "name": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-          "price": 109,
+          "mrp": 109,
           "discount": 10,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
@@ -683,7 +683,7 @@
         {
           "id": 76,
           "name": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-          "price": 114,
+          "mrp": 114,
           "discount": 50,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
@@ -692,7 +692,7 @@
         {
           "id": 77,
           "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-          "price": 599,
+          "mrp": 599,
           "discount": 54,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
@@ -701,7 +701,7 @@
         {
           "id": 78,
           "name": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-          "price": 999.99,
+          "mrp": 999.99,
           "discount": 60,
           "category": "electronics",
           "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
@@ -710,7 +710,7 @@
         {
           "id": 79,
           "name": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-          "price": 56.99,
+          "mrp": 56.99,
           "discount": 39,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
@@ -719,7 +719,7 @@
         {
           "id": 80,
           "name": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-          "price": 29.95,
+          "mrp": 29.95,
           "discount": 68,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
@@ -728,7 +728,7 @@
         {
           "id": 81,
           "name": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-          "price": 39.99,
+          "mrp": 39.99,
           "discount": 35,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
@@ -737,7 +737,7 @@
         {
           "id": 82,
           "name": "MBJ Women's Solid Short Sleeve Boat Neck V ",
-          "price": 9.85,
+          "mrp": 9.85,
           "discount": 62,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
@@ -746,7 +746,7 @@
         {
           "id": 83,
           "name": "Opna Women's Short Sleeve Moisture",
-          "price": 7.95,
+          "mrp": 7.95,
           "discount": 25,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
@@ -755,7 +755,7 @@
         {
           "id": 84,
           "name": "DANVOUY Womens T Shirt Casual Cotton Short",
-          "price": 12.99,
+          "mrp": 12.99,
           "discount": 85,
           "category": "Women Clothing",
           "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
