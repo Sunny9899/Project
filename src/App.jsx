@@ -1,14 +1,25 @@
 import './App.css';
-import {Gridd} from "./components/Grid/Grid";
+
 import {Filter} from "./components/Filters/Filters";
+import {useState} from "react";
+
 
 function App() {
+  const [filter,setFilter]=useState("");
+  const [prod,setProd]=useState([]);
+//useEffect(() =>{filterData()},[])
+
+  var filterData=(exp)=>{
+    setFilter(exp);
+    //return filter;
+    //console.log(filter);
+  }
+
   return (
     <div className="App">
       <b style={{"fontSize":"40px"}}>Filter: </b>
-      <Filter/>      
-      <b style={{"fontSize":"40px"}}>Grid: </b>
-      <Gridd/>
+      <Filter filterData={filterData} filter={filter} prod={prod} setProd={setProd}/>      
+
 
     </div>
   );

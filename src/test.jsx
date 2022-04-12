@@ -1,45 +1,56 @@
 import "./Filters.css";
 import {useState} from "react";
 
+var selData=document.getElementById("cat");
 
 export const Filter = () =>{
 
-const [filter,setFilter]=useState([]);
 
-/*Sort
+const [filter,setFilter]=useState("");
 
-//1 cost l to h & h to l
-//2 category mens clothing, women clothing, Jewellery, HomeFurnishing, mobiles
-//3 rating 1, 2, 3, 4, 5
-//4 discount 25 , 25-50, >75
+/*
+useEffect(()=>{
+    
+},[])
 */
+const filterData=(exp)=>{
+ setFilter(exp);
+ console.log(filter);
+}
+
 
 return(
     <div id="container" >
 
     <div id="cost">
         Cost:
-        <button>Low to High</button>
-        <button>High to Low</button>
+        <button onClick={()=>{filterData("CLH")}}>Low to High</button>
+        <button onClick={()=>{filterData("CHL")}}>High to Low</button>
     </div>
      
     <div id="discount">
         Discount:
-        <button>Low to High</button>
-        <button>High to Low</button>
+        <button onClick={()=>{filterData("DLH")}}>Low to High</button>
+        <button onClick={()=>{filterData("DHL")}}>High to Low</button>
     </div>
 
     <div id="category">
         Category: 
-        <select>
-          <option>Please choose a category</option>
-          <option id="men">Men Clothing</option>
-          <option id="women">Women Clothing</option>
-          <option id="home">Home Furnishing</option>
-          <option id="mob">Mobile</option>
-          <option id="jewel">Jewellery</option>
+        <select id="cat">
+          <option value="">Please choose a category</option>
+          <option id="men" value="men">Men Clothing</option>
+          <option id="women" value="women">Women Clothing</option>
+          <option id="home" value="home">Home Furnishing</option>
+          <option id="mob" value="mobile">Mobile</option>
+          <option id="jewel" value="jewel">Jewellery</option>
         </select>
-
+        <button
+          onClick={() => {
+            filterData(`${selData.value}`);
+          }}
+        >
+          Sbmt
+        </button>        
     </div>
 
     <div id="rating">
@@ -63,3 +74,5 @@ return(
 );
 
 }
+
+// ? : 

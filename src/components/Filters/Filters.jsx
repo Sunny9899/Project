@@ -1,82 +1,148 @@
 import "./Filters.css";
-import {useState} from "react";
+import {Gridd} from "../Grid/Grid";
+import { useEffect } from "react";
 
-var selData=document.getElementById("cat");
+const Axios= require("axios");
 
-export const Filter = () =>{
+export const Filter = ({filterData,filter,prod,setProd}) =>{
 
-//const fltr=false;
-const [filter,setFilter]=useState("");
+  const showData =()=>{
+    Axios.get("http://localhost:3001/data")
+    .then((res)=>{
+        //console.log(res.data);
+      setProd(res.data);
+    })
+  }
 
-/*
-useEffect(()=>{
+  useEffect(()=>{
+   showData();
+    },[]);
     
-},[])
-*/
-const filterData=(exp)=>{
- setFilter(exp);
- console.log(filter);
+    //console.log(prod);
+    const prod2=[...prod];
+    
+    const filterLH = (exp)=>{
+
+      filterData(exp);
+
+      const sortLH=(ex)=>{
+        if(ex==="cost"){
+        prod2.sort((a,b)=>{
+          return a.mrp-b.mrp;
+        })
+        }else if(ex==="discount"){
+        prod2.sort((a,b)=>{
+          return a.discount-b.discount;
+        })  
+        }
+        setProd(prod2);
+      //  console.log("Prod"+prod);  
+      }
+      sortLH(filter);
+    }
+
+
+    const filterHL=(exp)=>{
+      
+      filterData(exp);
+
+      const sortHL=(ex)=>{
+        if(ex==="cost"){
+        prod2.sort((a,b)=>{
+          return b.mrp-a.mrp;
+        })
+        }else if(ex==="discount"){
+        prod2.sort((a,b)=>{
+          return b.discount-a.discount;
+        })  
+        }
+        setProd(prod2);
+      //  console.log(prod);  
+      } 
+      sortHL(filter);     
+    }
+
+    const filterCat=(exp)=>{
+      filterData(exp);
+      
+      let prodByCat=[];
+      //
+      const getDataByCat=()=>{
+      
+        prod2.map((p)=>{
+          if(p.category===filter){
+           prodByCat.push(p);
+          }
+        });
+        setProd(prodByCat);
+        //console.log(prodByCat);
+      }
+
+
+      getDataByCat();
+
+    }
+   
+    const filterRate=(exp)=>{
+      filterData(exp);
+       let prodRate=[];
+      const getRateData=()=>{
+
+        prod2.map((p)=>{
+          if(p.rating>=filter){
+           // setProd(p);
+           prodRate.push(p);
+          }
+        });
+
+      setProd(prodRate); 
+     // console.log(prodRate);  
+}      
+getRateData();
 }
 
 
-/*Sort
-
-//1 cost l to h & h to l
-//2 category mens clothing, women clothing, Jewellery, HomeFurnishing, mobiles
-//3 rating 1, 2, 3, 4, 5
-//4 discount 25 , 25-50, >75
-*/
-
 return(
+  <div>
     <div id="container" >
 
     <div id="cost">
         Cost:
-        <button onClick={()=>{filterData("CLH")}}>Low to High</button>
-        <button onClick={()=>{filterData("CHL")}}>High to Low</button>
+        <button onClick={()=>{filterLH("cost") }}>Low to High</button>
+        <button onClick={()=>{filterHL("cost")}}>High to Low</button>
     </div>
      
     <div id="discount">
         Discount:
-        <button onClick={()=>{filterData("DLH")}}>Low to High</button>
-        <button onClick={()=>{filterData("DHL")}}>High to Low</button>
+        <button onClick={()=>{filterLH("discount")}}>Low to High</button>
+        <button onClick={()=>{filterHL("discount")}}>High to Low</button>
     </div>
 
     <div id="category">
         Category: 
-        <select id="cat">
-          <option value="">Please choose a category</option>
-          <option id="men" value="men">Men Clothing</option>
-          <option id="women" value="women">Women Clothing</option>
-          <option id="home" value="home">Home Furnishing</option>
-          <option id="mob" value="mobile">Mobile</option>
-          <option id="jewel" value="jewel">Jewellery</option>
-        </select>
-        <button
-          onClick={() => {
-            filterData(`${selData.value}`);
-          }}
-        >
-          Sbmt
-        </button>        
+          <button id="men" onClick={()=>{filterCat("Mens Clothing")}}>Men Clothing</button>
+          <button id="women" onClick={()=>{filterCat("Women Clothing")}}>Women Clothing</button>
+          <button id="home" onClick={()=>{filterCat("Home Furnishing")}}>Home Furnishing</button>
+          <button id="mob" onClick={()=>{filterCat("Mobile")}}>Mobile</button>
+          <button id="jewel" onClick={()=>{filterCat("jewelery")}}>Jewellery</button>     
     </div>
 
     <div id="rating">
         Rating:  
+        <button id="rate1" onClick={()=>{filterRate(1)}}>1⭐ & above</button>
 
-        <input type="checkbox" id="rate1"/>
-        <label>1⭐ & above</label>
-        <br/>
-        <input type="checkbox" id="rate2"/>
-        <label>2⭐ & above</label>
-        <br/>
-        <input type="checkbox" id="rate3"/>
-        <label>3⭐ & above</label>
-        <br/>
-        <input type="checkbox" id="rate4"/>
-        <label>4⭐ & above</label>                
+        <button id="rate2" onClick={()=>{filterRate(2)}}>2⭐ & above</button>
+
+        <button id="rate3" onClick={()=>{filterRate(3)}}>3⭐ & above</button>
+
+        <button id="rate4" onClick={()=>{filterRate(4)}}>4⭐ & above</button>                
     </div>
 
+
+    </div>
+
+    <b style={{"fontSize":"40px"}}>Grid: </b>
+      <Gridd prod={prod}/>
 
     </div>
 );

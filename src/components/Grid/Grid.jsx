@@ -1,23 +1,16 @@
-import { useState, useEffect } from "react"; 
+ 
 import "./Grid.css";
 
-const Axios= require("axios");
 
-export const Gridd = ()=>{
 
-const [prod,setProd]=useState([]);
+export const Gridd = ({prod})=>{
 
-useEffect(()=>{
-Axios.get("http://localhost:3001/data")
-.then((res)=>{
-    //console.log(res.data);
-  setProd(res.data);
-})
-},[]);
 
-//console.log(prod);
+
+
 
 return (
+  <div>
     <div id="grid">
       
         {prod.map((p)=>(
@@ -28,15 +21,18 @@ return (
           <img src={p.img}/>
           </div>
 
-          <p className="price">{p.mrp}</p>
-          <p className="rating">{p.rating}</p>
-          <p className="name">{p.name}</p>
-          <p className="category">{p.category}</p>
+          <p className="price">Price: {p.mrp}</p>
+          <p className="rating">Rating: {p.rating}</p>
+          <p className="name">Name: {p.name}</p>
+          <p className="category">Category: {p.category}</p>
+          <p className="discount">Discount: {p.discount}</p>
           </div>
 
         </div>
         ))}
     </div>
+ 
+      </div>
 );
 
 };
