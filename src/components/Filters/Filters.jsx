@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const Axios= require("axios");
 
-export const Filter = ({filterData,filter,prod,setProd}) =>{
+export const Filter = ({/*filterData,filter,*/prod,setProd}) =>{
 
   const showData =()=>{
     Axios.get("http://localhost:3001/data")
@@ -23,7 +23,7 @@ export const Filter = ({filterData,filter,prod,setProd}) =>{
     
     const filterLH = (exp)=>{
 
-      filterData(exp);
+      //filterData(exp);
 
       const sortLH=(ex)=>{
         if(ex==="cost"){
@@ -38,13 +38,13 @@ export const Filter = ({filterData,filter,prod,setProd}) =>{
         setProd(prod2);
       //  console.log("Prod"+prod);  
       }
-      sortLH(filter);
+      sortLH(exp);
     }
 
 
     const filterHL=(exp)=>{
       
-      filterData(exp);
+     // filterData(exp);
 
       const sortHL=(ex)=>{
         if(ex==="cost"){
@@ -59,37 +59,34 @@ export const Filter = ({filterData,filter,prod,setProd}) =>{
         setProd(prod2);
       //  console.log(prod);  
       } 
-      sortHL(filter);     
+      sortHL(exp);     
     }
 
     const filterCat=(exp)=>{
-      filterData(exp);
-      
-      let prodByCat=[];
-      //
-      const getDataByCat=()=>{
+     // filterData(exp);
+
+      let prodCat=[];
+      const getDataByCat=(ex)=>{
       
         prod2.map((p)=>{
-          if(p.category===filter){
-           prodByCat.push(p);
+          if(p.category===ex){
+           prodCat.push(p);
           }
         });
-        setProd(prodByCat);
-        //console.log(prodByCat);
+        
+        setProd(prodCat);
+        //console.log(prod);
       }
-
-
-      getDataByCat();
-
+      getDataByCat(exp);
     }
    
     const filterRate=(exp)=>{
-      filterData(exp);
+   //   filterData(exp);
        let prodRate=[];
-      const getRateData=()=>{
+      const getRateData=(ex)=>{
 
         prod2.map((p)=>{
-          if(p.rating>=filter){
+          if(p.rating>=ex){
            // setProd(p);
            prodRate.push(p);
           }
@@ -98,7 +95,7 @@ export const Filter = ({filterData,filter,prod,setProd}) =>{
       setProd(prodRate); 
      // console.log(prodRate);  
 }      
-getRateData();
+getRateData(exp);
 }
 
 

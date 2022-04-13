@@ -1,13 +1,6 @@
- 
 import "./Grid.css";
 
-
-
 export const Gridd = ({prod})=>{
-
-
-
-
 
 return (
   <div>
