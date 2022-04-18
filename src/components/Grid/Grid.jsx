@@ -1,12 +1,17 @@
 import "./Grid.css";
+import {getState} from "react-redux";
+import {store} from "../../redux/store";
 
-export const Gridd = ({prod})=>{
+const prod=store.getState();
+const prod2=prod.filteredData;
 
+  export const Gridd=()=>{
+console.log(prod2);
 return (
   <div>
     <div id="grid">
       
-        {prod.map((p)=>(
+        {prod2.map((p)=>(
         <div >
         <div className="container" key={p.id}>
 
