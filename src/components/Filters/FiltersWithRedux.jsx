@@ -1,7 +1,9 @@
 import "./Filters.css";
 import { Gridd } from "../Grid/Grid";
-import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { useDispatch, getState } from "react-redux";
+
+
 import {
   filterByCategory,
   filterByRating,
@@ -9,6 +11,7 @@ import {
   filterLowtoHigh,
   filterHightoLow,
 } from "../../redux/Slice";
+
 
 const Axios = require("axios");
 
@@ -27,12 +30,14 @@ export const FilterWithRedux = () => {
     showData();
   }, [dispatch]);
 
+  
   const showDataByCategory = (exp) => {
     //Get Data By Category
     Axios.get(`http://localhost:3001/data?category=${exp}`).then((res) => {
       dispatch(filterByCategory(res.data));
     });
   };
+  
 
   const showDataByRating = (exp) => {
     //Get Data By Rating
