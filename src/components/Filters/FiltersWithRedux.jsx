@@ -1,19 +1,15 @@
 import "./Filters.css";
 import { Gridd } from "../Grid/Grid";
 import { useEffect } from "react";
-import { useDispatch, getState } from "react-redux";
-
-
+import { useDispatch } from "react-redux";
 import {
   filterByCategory,
   filterByRating,
-  getAllData,
+  getDefaultData,
   filterLowtoHigh,
   filterHightoLow,
 } from "../../redux/Slice";
 
-
-const Axios = require("axios");
 
 export const FilterWithRedux = () => {
   const dispatch = useDispatch();
@@ -22,46 +18,29 @@ export const FilterWithRedux = () => {
 
   useEffect(() => {
     //Get Default Data
-    const showData = () => {
-      Axios.get("http://localhost:3001/data").then((res) => {
-        dispatch(getAllData(res.data));
-      });
-    };
-    showData();
+    dispatch(getDefaultData());
   }, [dispatch]);
 
   
   const showDataByCategory = (exp) => {
     //Get Data By Category
-    Axios.get(`http://localhost:3001/data?category=${exp}`).then((res) => {
-      dispatch(filterByCategory(res.data));
-    });
+      dispatch(filterByCategory(exp));
   };
   
 
   const showDataByRating = (exp) => {
     //Get Data By Rating
-    Axios.get(`http://localhost:3001/data?rating_gte=${exp}`).then((res) => {
-      dispatch(filterByRating(res.data));
-    });
+      dispatch(filterByRating(exp));
   };
 
   const showDataLowtoHigh = (exp) => {
     //Get Data sort L to H
-    Axios.get(`http://localhost:3001/data?_sort=${exp}&_order=asc`).then(
-      (res) => {
-        dispatch(filterLowtoHigh(res.data));
-      }
-    );
+        dispatch(filterLowtoHigh(exp));
   };
 
   const showDataHightoLow = (exp) => {
     //Get Data sort H to L
-    Axios.get(`http://localhost:3001/data?_sort=${exp}&_order=desc`).then(
-      (res) => {
-        dispatch(filterHightoLow(res.data));
-      }
-    );
+        dispatch(filterHightoLow(exp));
   };
 
   //Functions to trigger the right above mentioned functions on filter click
