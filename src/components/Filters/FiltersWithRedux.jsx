@@ -184,7 +184,6 @@ export const FilterWithRedux = () => {
       </div>
 
       <b style={{ fontSize: "40px" }}>Grid: </b>
-      {/*<Gridd prod={prod} />*/}
       <Gridd/>
     </div>
   );
