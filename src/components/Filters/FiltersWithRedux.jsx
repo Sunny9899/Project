@@ -13,42 +13,37 @@ import {
 } from "../../redux/Slice";
 
 
-const Axios = require("axios");
+const axios = require("axios");
 
 export const FilterWithRedux = () => {
   const dispatch = useDispatch();
 
-  //Functions to get data acc. to clicked filter
+  const showData = () => {
+    axios.get("http://localhost:3001/data").then((res) => {
+      dispatch(getAllData(res.data));
+    });
+  };
 
   useEffect(() => {
-    //Get Default Data
-    const showData = () => {
-      Axios.get("http://localhost:3001/data").then((res) => {
-        dispatch(getAllData(res.data));
-      });
-    };
     showData();
   }, [dispatch]);
 
   
   const showDataByCategory = (exp) => {
-    //Get Data By Category
-    Axios.get(`http://localhost:3001/data?category=${exp}`).then((res) => {
+    axios.get(`http://localhost:3001/data?category=${exp}`).then((res) => {
       dispatch(filterByCategory(res.data));
     });
   };
   
 
   const showDataByRating = (exp) => {
-    //Get Data By Rating
-    Axios.get(`http://localhost:3001/data?rating_gte=${exp}`).then((res) => {
+    axios.get(`http://localhost:3001/data?rating_gte=${exp}`).then((res) => {
       dispatch(filterByRating(res.data));
     });
   };
 
   const showDataLowtoHigh = (exp) => {
-    //Get Data sort L to H
-    Axios.get(`http://localhost:3001/data?_sort=${exp}&_order=asc`).then(
+    axios.get(`http://localhost:3001/data?_sort=${exp}&_order=asc`).then(
       (res) => {
         dispatch(filterLowtoHigh(res.data));
       }
@@ -56,18 +51,15 @@ export const FilterWithRedux = () => {
   };
 
   const showDataHightoLow = (exp) => {
-    //Get Data sort H to L
-    Axios.get(`http://localhost:3001/data?_sort=${exp}&_order=desc`).then(
+    axios.get(`http://localhost:3001/data?_sort=${exp}&_order=desc`).then(
       (res) => {
         dispatch(filterHightoLow(res.data));
       }
     );
   };
 
-  //Functions to trigger the right above mentioned functions on filter click
 
   const filterClicked = (exp) => {
-    //To check which function to execute when filter is clicked
     if (exp == 1 || exp == 2 || exp == 3 || exp == 4) {
       showDataByRating(exp);
     } else {
@@ -76,7 +68,6 @@ export const FilterWithRedux = () => {
   };
 
   const sortFilterClicked = (exp, order) => {
-    //To check which function to execute when sort(L to H or H to L) filter is clicked
     if (order === "asc") {
       showDataLowtoHigh(exp);
     } else if (order === "desc") {
@@ -205,7 +196,6 @@ export const FilterWithRedux = () => {
       </div>
 
       <b style={{ fontSize: "40px" }}>Grid: </b>
-      {/*<Gridd prod={prod} />*/}
       <Gridd/>
     </div>
   );
