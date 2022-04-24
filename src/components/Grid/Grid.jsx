@@ -1,12 +1,15 @@
 import "./Grid.css";
+import { useSelector } from "react-redux";
 
-export const Gridd = ({prod})=>{
 
+  export const Gridd=()=>{
+    const findData=useSelector((state)=>state.filters);
+    const product=findData.filteredData;
 return (
   <div>
     <div id="grid">
       
-        {prod.map((p)=>(
+        {product.map((p)=>(
         <div >
         <div className="container" key={p.id}>
 
