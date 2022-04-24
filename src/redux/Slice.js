@@ -14,10 +14,7 @@ const filterSlice = createSlice({
     filterByRating: (state, { payload }) => {
       state.filteredData = payload;
     },
-    filterLowtoHigh: (state, { payload }) => {
-      state.filteredData = payload;
-    },
-    filterHightoLow: (state, { payload }) => {
+    filterBySort: (state, { payload }) => {
       state.filteredData = payload;
     },
     getAllData: (state, { payload }) => {
@@ -29,8 +26,7 @@ const filterSlice = createSlice({
 export const {
   filterByCategory,
   filterByRating,
-  filterLowtoHigh,
-  filterHightoLow,
+  filterBySort,
   getAllData,
 } = filterSlice.actions;
 
