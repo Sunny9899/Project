@@ -5,12 +5,12 @@ const initialState = {
   loading:false,
 };
 
-const Axios = require("axios");
+const axios = require("axios");
 
-export const getDefaultData = createAsyncThunk(
-  "filters/getDefaultData",
+export const getAllData = createAsyncThunk(
+  "filters/getAllData",
   async (thunkAPI) => {
-    const res = await Axios.get("http://localhost:3001/data").then(
+    const res = await axios.get("http://localhost:3001/data").then(
       (d) => d.data
     );
     return res;
@@ -20,7 +20,7 @@ export const getDefaultData = createAsyncThunk(
 export const filterByCategory = createAsyncThunk(
   "filters/filterByCategory",
   async (thunkAPI) => {
-    const res = await Axios.get(
+    const res = await axios.get(
       `http://localhost:3001/data?category=${thunkAPI}`
     ).then((d) => d.data);
     return res;
@@ -30,32 +30,23 @@ export const filterByCategory = createAsyncThunk(
 export const filterByRating = createAsyncThunk(
   "filters/filterByRating",
   async (thunkAPI) => {
-    const res = await Axios.get(
+    const res = await axios.get(
       `http://localhost:3001/data?rating_gte=${thunkAPI}`
     ).then((d) => d.data);
     return res;
   }
 );
 
-export const filterHightoLow = createAsyncThunk(
-  "filters/filterHightoLow",
-  async (thunkAPI) => {
-    const res = await Axios.get(
-      `http://localhost:3001/data?_sort=${thunkAPI}&_order=desc`
+export const filterBySort = createAsyncThunk(
+  "filters/filterBySort",
+  async ({exp,order}) => {
+    const res = await axios.get(
+      `http://localhost:3001/data?_sort=${exp}&_order=${order}`
     ).then((d) => d.data);
     return res;
   }
 );
 
-export const filterLowtoHigh = createAsyncThunk(
-  "filters/filterLowtoHigh",
-  async (thunkAPI) => {
-    const res = await Axios.get(
-      `http://localhost:3001/data?_sort=${thunkAPI}&_order=asc`
-    ).then((d) => d.data);
-    return res;
-  }
-);
 
 const filterSlice = createSlice({
   name: "filters",
@@ -69,13 +60,10 @@ const filterSlice = createSlice({
     [filterByRating.pending]: (state) => {
       state.loading=true;
     },
-    [filterHightoLow.pending]: (state) => {
+    [filterBySort.pending]: (state) => {
       state.loading=true;
     },
-    [filterLowtoHigh.pending]: (state) => {
-      state.loading=true;
-    },
-    [getDefaultData.pending]: (state) => {
+    [getAllData.pending]: (state) => {
       state.loading=true;
     },
     
@@ -88,15 +76,11 @@ const filterSlice = createSlice({
       state.filteredData = payload;
       state.loading=false;
     },
-    [filterHightoLow.fulfilled]: (state, { payload }) => {
+    [filterBySort.fulfilled]: (state, { payload }) => {
       state.filteredData = payload;
       state.loading=false;
     },
-    [filterLowtoHigh.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [getDefaultData.fulfilled]: (state, { payload }) => {
+    [getAllData.fulfilled]: (state, { payload }) => {
       state.filteredData = payload;
       state.loading=false;
     },
@@ -108,13 +92,10 @@ const filterSlice = createSlice({
     [filterByRating.rejected]: (state) => {
       state.loading=false;
     },
-    [filterHightoLow.rejected]: (state) => {
+    [filterBySort.rejected]: (state) => {
       state.loading=false;
     },
-    [filterLowtoHigh.rejected]: (state) => {
-      state.loading=false;
-    },
-    [getDefaultData.rejected]: (state) => {
+    [getAllData.rejected]: (state) => {
       state.loading=false;
     },    
 
