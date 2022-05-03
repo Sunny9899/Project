@@ -36,122 +36,134 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
+exports.filterBySort = exports.filterByRating = exports.filterByCategory = exports.getAllData = void 0;
 var toolkit_1 = require("@reduxjs/toolkit");
 var axios_1 = require("axios");
 var initialState = {
     filteredData: [],
     loading: false
 };
-var getAllData = (0, toolkit_1.createAsyncThunk)("filters/getAllData", function () { return __awaiter(void 0, void 0, void 0, function () {
-    var res;
+exports.getAllData = (0, toolkit_1.createAsyncThunk)("filters/getAllData", function () { return __awaiter(void 0, void 0, void 0, function () {
+    var res, res2, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data")];
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data")];
             case 1:
                 res = _a.sent();
-                return [2 /*return*/, res];
+                res2 = res.data;
+                return [2 /*return*/, res2];
+            case 2:
+                err_1 = _a.sent();
+                throw err_1;
+            case 3: return [2 /*return*/];
         }
     });
 }); });
-console.dir(getAllData());
-/*
-export const getAllData = createAsyncThunk(
-  "filters/getAllData",
-  async (thunkAPI) => {
-    const res:object = await axios.get("http://localhost:3001/data").then(
-      (d:unknown) =>
-      console.log(typeof(d))
-      //d.data
-    );
-    return res;
-  }
-);
-
-
-export const filterByCategory = createAsyncThunk(
-  "filters/filterByCategory",
-  async (thunkAPI) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?category=${thunkAPI}`
-    ).then((d:any) => d.data);
-    return res;
-  }
-);
-
-export const filterByRating = createAsyncThunk(
-  "filters/filterByRating",
-  async (thunkAPI) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?rating_gte=${thunkAPI}`
-    ).then((d:any) => d.data);
-    return res;
-  }
-);
-
-export const filterBySort = createAsyncThunk(
-  "filters/filterBySort",
-  async (thunkAPI:object) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?_sort=${thunkAPI.exp}&_order=${thunkAPI.order}`
-    ).then((d:any) => d.data);
-    return res;
-  }
-);
-
-
-const filterSlice = createSlice({
-  name: "filters",
-  initialState,
-  reducers: {},
-  extraReducers: extReducer={
-
-    [filterByCategory.pending]: (state) => {
-      state.loading=true;
-    },
-    [filterByRating.pending]: (state) => {
-      state.loading=true;
-    },
-    [filterBySort.pending]: (state) => {
-      state.loading=true;
-    },
-    [getAllData.pending]: (state) => {
-      state.loading=true;
-    },
-    
-
-    [filterByCategory.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [filterByRating.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [filterBySort.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [getAllData.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-
-
-    [filterByCategory.rejected]: (state) => {
-      state.loading=false;
-    },
-    [filterByRating.rejected]: (state) => {
-      state.loading=false;
-    },
-    [filterBySort.rejected]: (state) => {
-      state.loading=false;
-    },
-    [getAllData.rejected]: (state) => {
-      state.loading=false;
-    },
-
-  },
+exports.filterByCategory = (0, toolkit_1.createAsyncThunk)("filters/filterByCategory", function (thunkAPI) { return __awaiter(void 0, void 0, void 0, function () {
+    var res, res2, err_2;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?category=".concat(thunkAPI.exp))];
+            case 1:
+                res = _a.sent();
+                res2 = res.data;
+                return [2 /*return*/, res2];
+            case 2:
+                err_2 = _a.sent();
+                throw err_2;
+            case 3: return [2 /*return*/];
+        }
+    });
+}); });
+exports.filterByRating = (0, toolkit_1.createAsyncThunk)("filters/filterByRating", function (thunkAPI) { return __awaiter(void 0, void 0, void 0, function () {
+    var res, res2, err_3;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?rating_gte=".concat(thunkAPI.exp))];
+            case 1:
+                res = _a.sent();
+                res2 = res.data;
+                return [2 /*return*/, res2];
+            case 2:
+                err_3 = _a.sent();
+                throw err_3;
+            case 3: return [2 /*return*/];
+        }
+    });
+}); });
+exports.filterBySort = (0, toolkit_1.createAsyncThunk)("filters/filterBySort", function (thunkAPI) { return __awaiter(void 0, void 0, void 0, function () {
+    var res, res2, err_4;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?_sort=".concat(thunkAPI.exp, "&_order=").concat(thunkAPI.order))];
+            case 1:
+                res = _a.sent();
+                res2 = res.data;
+                return [2 /*return*/, res2];
+            case 2:
+                err_4 = _a.sent();
+                throw err_4;
+            case 3: return [2 /*return*/];
+        }
+    });
+}); });
+var filterSlice = (0, toolkit_1.createSlice)({
+    name: "filters",
+    initialState: initialState,
+    reducers: {},
+    extraReducers: function (builder) {
+        builder.addCase(exports.filterByCategory.pending, function (state) {
+            state.loading = true;
+        });
+        builder.addCase(exports.filterByRating.pending, function (state) {
+            state.loading = true;
+        });
+        builder.addCase(exports.filterBySort.pending, function (state) {
+            state.loading = true;
+        });
+        builder.addCase(exports.getAllData.pending, function (state) {
+            state.loading = true;
+        });
+        builder.addCase(exports.filterByCategory.fulfilled, function (state, _a) {
+            var payload = _a.payload;
+            state.filteredData = payload;
+            state.loading = false;
+        });
+        builder.addCase(exports.filterByRating.fulfilled, function (state, _a) {
+            var payload = _a.payload;
+            state.filteredData = payload;
+            state.loading = false;
+        });
+        builder.addCase(exports.filterBySort.fulfilled, function (state, _a) {
+            var payload = _a.payload;
+            state.filteredData = payload;
+            state.loading = false;
+        });
+        builder.addCase(exports.getAllData.fulfilled, function (state, _a) {
+            var payload = _a.payload;
+            state.filteredData = payload;
+            state.loading = false;
+        });
+        builder.addCase(exports.filterByCategory.rejected, function (state) {
+            state.loading = false;
+        });
+        builder.addCase(exports.filterByRating.rejected, function (state) {
+            state.loading = false;
+        });
+        builder.addCase(exports.filterBySort.rejected, function (state) {
+            state.loading = false;
+        });
+        builder.addCase(exports.getAllData.rejected, function (state) {
+            state.loading = false;
+        });
+    }
 });
-
-export default filterSlice.reducer;
-*/ 
+exports["default"] = filterSlice.reducer;

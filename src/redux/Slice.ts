@@ -1,130 +1,150 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-interface defineState{
-    filteredData:string[];
-    loading:boolean;
+interface response {
+  data: any[];
 }
 
-interface extReducer{
-  pending:boolean;
-  fullfilled:[string,boolean];
-  rejected:boolean;
+interface thunk {
+  exp: string | number;
+  order?: string;
 }
 
-const initialState : defineState= {
+interface defineState {
+  filteredData: string[];
+  loading: boolean;
+}
+
+const initialState: defineState = {
   filteredData: [],
-  loading:false,
+  loading: false,
 };
 
-
- const getAllData = createAsyncThunk(
-  "filters/getAllData",
-  async () => {
-    const res = await axios.get("http://localhost:3001/data")
-    return res;
+export const getAllData = createAsyncThunk("filters/getAllData", async () => {
+  // eslint-disable-next-line no-useless-catch
+  try {
+    const res = (await axios.get("http://localhost:3001/data")) as response;
+    const res2 = res.data;
+    return res2;
+  } catch (err: unknown) {
+    throw err;
   }
-);
-
-console.dir(getAllData());
-/*
-export const getAllData = createAsyncThunk(
-  "filters/getAllData",
-  async (thunkAPI) => {
-    const res:object = await axios.get("http://localhost:3001/data").then(
-      (d:unknown) => 
-      console.log(typeof(d))
-      //d.data
-    );
-    return res;
-  }
-);
-
+});
 
 export const filterByCategory = createAsyncThunk(
   "filters/filterByCategory",
-  async (thunkAPI) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?category=${thunkAPI}`
-    ).then((d:any) => d.data);
-    return res;
+  async (thunkAPI: thunk) => {
+    // eslint-disable-next-line no-useless-catch
+    try {
+      const res = (await axios.get(
+        `http://localhost:3001/data?category=${thunkAPI.exp}`
+      )) as response;
+      const res2 = res.data;
+      return res2;
+    } catch (err: unknown) {
+      throw err;
+    }
   }
 );
 
 export const filterByRating = createAsyncThunk(
   "filters/filterByRating",
-  async (thunkAPI) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?rating_gte=${thunkAPI}`
-    ).then((d:any) => d.data);
-    return res;
+  async (thunkAPI: thunk) => {
+    // eslint-disable-next-line no-useless-catch
+    try {
+      const res = (await axios.get(
+        `http://localhost:3001/data?rating_gte=${thunkAPI.exp}`
+      )) as response;
+      const res2 = res.data;
+      return res2;
+    } catch (err: unknown) {
+      throw err;
+    }
   }
 );
 
 export const filterBySort = createAsyncThunk(
   "filters/filterBySort",
-  async (thunkAPI:object) => {
-    const res = await axios.get(
-      `http://localhost:3001/data?_sort=${thunkAPI.exp}&_order=${thunkAPI.order}`
-    ).then((d:any) => d.data);
-    return res;
+  async (thunkAPI: thunk) => {
+    // eslint-disable-next-line no-useless-catch
+    try {
+      const res = (await axios.get(
+        `http://localhost:3001/data?_sort=${thunkAPI.exp}&_order=${thunkAPI.order}`
+      )) as response;
+      const res2 = res.data;
+      return res2;
+    } catch (err: unknown) {
+      throw err;
+    }
   }
 );
-
 
 const filterSlice = createSlice({
   name: "filters",
   initialState,
   reducers: {},
-  extraReducers: extReducer={
+  extraReducers: (builder) => {
+    builder.addCase(filterByCategory.pending, (state: defineState) => {
+      state.loading = true;
+    });
 
-    [filterByCategory.pending]: (state) => {
-      state.loading=true;
-    },
-    [filterByRating.pending]: (state) => {
-      state.loading=true;
-    },
-    [filterBySort.pending]: (state) => {
-      state.loading=true;
-    },
-    [getAllData.pending]: (state) => {
-      state.loading=true;
-    },
-    
+    builder.addCase(filterByRating.pending, (state: defineState) => {
+      state.loading = true;
+    });
 
-    [filterByCategory.fulfilled]: (state, { payload }) => {
+    builder.addCase(filterBySort.pending, (state: defineState) => {
+      state.loading = true;
+    });
+
+    builder.addCase(getAllData.pending, (state: defineState) => {
+      state.loading = true;
+    });
+
+    builder.addCase(
+      filterByCategory.fulfilled,
+      (state: defineState, { payload }) => {
+        state.filteredData = payload;
+        state.loading = false;
+      }
+    );
+
+    builder.addCase(
+      filterByRating.fulfilled,
+      (state: defineState, { payload }) => {
+        state.filteredData = payload;
+        state.loading = false;
+      }
+    );
+
+    builder.addCase(
+      filterBySort.fulfilled,
+      (state: defineState, { payload }) => {
+        state.filteredData = payload;
+        state.loading = false;
+      }
+    );
+
+    builder.addCase(getAllData.fulfilled, (state: defineState, { payload }) => {
       state.filteredData = payload;
-      state.loading=false;
-    },
-    [filterByRating.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [filterBySort.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
-    [getAllData.fulfilled]: (state, { payload }) => {
-      state.filteredData = payload;
-      state.loading=false;
-    },
+      state.loading = false;
+    });
 
+    builder.addCase(filterByCategory.rejected, (state: defineState) => {
+      state.loading = false;
+    });
 
-    [filterByCategory.rejected]: (state) => {
-      state.loading=false;
-    },
-    [filterByRating.rejected]: (state) => {
-      state.loading=false;
-    },
-    [filterBySort.rejected]: (state) => {
-      state.loading=false;
-    },
-    [getAllData.rejected]: (state) => {
-      state.loading=false;
-    },    
+    builder.addCase(filterByRating.rejected, (state: defineState) => {
+      state.loading = false;
+    });
 
+    builder.addCase(filterBySort.rejected, (state: defineState) => {
+      state.loading = false;
+    });
+
+    builder.addCase(getAllData.rejected, (state: defineState) => {
+      state.loading = false;
+    });
   },
 });
 
 export default filterSlice.reducer;
-*/

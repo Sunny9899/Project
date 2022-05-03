@@ -1,9 +1,17 @@
-export const Button = ({Clicked,txt,param1,param2}) => {
+type Prop={
+  Clicked:any;
+  txt:string;
+  param1:string;
+  param2:string;
+}
+
+export const Button = (props:Prop) => {
+  const Clicked=props.Clicked;
     return (
       <button
-        onClick={()=>{Clicked(param1,param2)}}
+        onClick={()=>{Clicked(props.param1,props.param2)}}
       >
-        {txt}
+        {props.txt}
       </button>
     );
   };
