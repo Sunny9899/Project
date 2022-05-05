@@ -51,7 +51,7 @@ exports.getAllData = (0, toolkit_1.createAsyncThunk)("filters/getAllData", funct
                 _a.trys.push([0, 2, , 3]);
                 return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data")];
             case 1:
-                res = _a.sent();
+                res = (_a.sent());
                 res2 = res.data;
                 return [2 /*return*/, res2];
             case 2:
@@ -69,7 +69,7 @@ exports.filterByCategory = (0, toolkit_1.createAsyncThunk)("filters/filterByCate
                 _a.trys.push([0, 2, , 3]);
                 return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?category=".concat(thunkAPI.exp))];
             case 1:
-                res = _a.sent();
+                res = (_a.sent());
                 res2 = res.data;
                 return [2 /*return*/, res2];
             case 2:
@@ -87,7 +87,7 @@ exports.filterByRating = (0, toolkit_1.createAsyncThunk)("filters/filterByRating
                 _a.trys.push([0, 2, , 3]);
                 return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?rating_gte=".concat(thunkAPI.exp))];
             case 1:
-                res = _a.sent();
+                res = (_a.sent());
                 res2 = res.data;
                 return [2 /*return*/, res2];
             case 2:
@@ -105,7 +105,7 @@ exports.filterBySort = (0, toolkit_1.createAsyncThunk)("filters/filterBySort", f
                 _a.trys.push([0, 2, , 3]);
                 return [4 /*yield*/, axios_1["default"].get("http://localhost:3001/data?_sort=".concat(thunkAPI.exp, "&_order=").concat(thunkAPI.order))];
             case 1:
-                res = _a.sent();
+                res = (_a.sent());
                 res2 = res.data;
                 return [2 /*return*/, res2];
             case 2:

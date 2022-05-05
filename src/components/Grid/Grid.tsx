@@ -1,26 +1,30 @@
 import "./Grid.css";
+import * as React from 'react';
 import { useAppSelector } from "../hooks";
 
+/*
 interface data {
-  id: number;
-  img: string;
-  mrp: number;
-  rating: number;
+  img: string;  
   name: string;
-  category: string;
+  mrp: number;
   discount: number;
+  rating: number;
+  category: string;
+  id: number;
 }
+*/
 
 export const Gridd = () => {
   const { filteredData, loading } = useAppSelector((state) => state.filters);
   //console.log(filteredData);
+
   return (
-    <div>
+     <div>
       {loading === true ? (
         <h1>Loading...</h1>
       ) : (
         <div id="grid">
-          {filteredData.map((p: data) => (
+          {filteredData.map((p) => (
             <div>
               <div className="container" key={p.id}>
                 <div className="imag">

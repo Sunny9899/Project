@@ -1,3 +1,4 @@
+import * as React from 'react';
 import "./Filters.css";
 import { Gridd } from "../Grid/Grid";
 import { useEffect } from "react";
@@ -29,7 +30,7 @@ export const FilterWithRedux = () => {
     dispatch(filterBySort({ exp, order }));
   };
 
-  const filterClicked = (exp: any, order: string) => {
+  const filterClicked = (exp:any, order: string) => {
     if (exp == 1 || exp == 2 || exp == 3 || exp == 4) {
       showDataByRating(exp);
     } else if (

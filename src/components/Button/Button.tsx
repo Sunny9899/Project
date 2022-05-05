@@ -1,3 +1,4 @@
+import * as React from 'react';
 type Prop={
   Clicked:any;
   txt:string;

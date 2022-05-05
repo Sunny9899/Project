@@ -11,7 +11,16 @@ interface thunk {
 }
 
 interface defineState {
-  filteredData: string[];
+  filteredData: { //array of objects with these keys
+    img: string;
+    name: string;
+    mrp: number;
+    discount: number;
+    rating: number;
+    category: string;
+    id: number;
+  }[];
+
   loading: boolean;
 }
 
