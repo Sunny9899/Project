@@ -1,12 +1,15 @@
 import "./Grid.css";
+import { useSelector } from "react-redux";
 
-export const Gridd = ({prod})=>{
-
-return (
+  export const Gridd=()=>{
+    const {filteredData,loading}=useSelector((state)=>state.filters);
+    //console.log(filteredData);
+    return( 
   <div>
+       {loading===true ? <h1>Loading...</h1> : 
     <div id="grid">
       
-        {prod.map((p)=>(
+        {filteredData.map((p)=>(
         <div >
         <div className="container" key={p.id}>
 
@@ -24,8 +27,7 @@ return (
         </div>
         ))}
     </div>
- 
+  }
       </div>
-);
-
+  );
 };
